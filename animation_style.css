@@ -1,0 +1,74 @@
+#Scene {}
+
+/*Baggrund*/
+
+#girl_room {}
+
+#class_room {}
+
+
+/*Figurer*/
+
+#girl_container {}
+
+.girl_go_room {}
+
+.girl_move_in {}
+
+.girl_move_out {}
+
+.girl_position_in {}
+
+#girl_sprite {}
+
+.girl_walk_room {}
+
+.girl_walk {}
+
+.girl_run {}
+
+.girl_phone_smile {}
+
+#phone_container {}
+
+.phone_came_up {}
+
+#phone_sprite {}
+
+.crush_pic_phone {}
+
+.phone_goodmorning {}
+
+#boy_container {}
+
+.boy_position_in {}
+
+.boy_move_in {}
+
+#boy_sprite {}
+
+.boy_walk {}
+
+.boy_phone {}
+
+.boy_show {}
+
+.boy_phone_smile {}
+
+#guys_container {}
+
+.guys_position_in {}
+
+#guys_sprite {}
+
+.guys_talk {}
+
+.guys_laughs {}
+
+
+
+/*Knapper*/
+
+.vis_billedet {}
+
+.skriv_besked {}
