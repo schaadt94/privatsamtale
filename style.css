@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: orange;
+}
+
+p {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #FD9128;
+    position: relative;
+    top: 0;
+    width: 100%;
+
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px
+}
+
+li a:hover {
+    background-color: #fc8613;
+}
