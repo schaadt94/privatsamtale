@@ -5,30 +5,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privat samtale - sex og samfund</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="iconer/logo-privatsnak.png">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#medlemmer">Forside</a></li>
-                <li><a href="#link">Link Animation</a></li>
-                <li><a href="#ide">Idé</a></li>
-                <li><a href="#historie">Story board/Flowchart</a></li>
-                <li><a href="#maalgruppe">Målgruppe</a></li>
-                <li><a href="#moodboard">Moodboard</a></li>
-                <li><a href="#styletile">Styletile</a></li>
-                <li><a href="#skitser">Skitser</a></li>
-                <li><a href="#layoutdiagram">Layoutdiagram</a></li>
-                <li><a href="#sekvensdiagram">Sekvensdiagram</a></li>
-                <li><a href="#asset-liste">Asset liste</a></li>
-                <li><a href="#test-dokumentation">Test dokumentation</a></li>
-                <li><a href="#foto">Foto fra ferniseringen</a></li>
-                <li><a href="#trello">Trello</a></li>
-                <li><a href="#burn-down">Burn-down charts</a></li>
-            </ul>
-        </nav>
+        <div id="myNav" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+
+                <a href="#medlemmer">Forside</a>
+                <a href="#link">Link Animation</a>
+                <a href="#ide">Idé</a>
+                <a href="#historie">Story board/Flowchart</a>
+                <a href="#maalgruppe">Målgruppe</a>
+                <a href="#moodboard">Moodboard</a>
+                <a href="#styletile">Styletile</a>
+                <a href="#skitser">Skitser</a>
+                <a href="#layoutdiagram">Layoutdiagram</a>
+                <a href="#sekvensdiagram">Sekvensdiagram</a>
+                <a href="#asset-liste">Asset liste</a>
+                <a href="#test-dokumentation">Test dokumentation</a>
+                <a href="#foto">Foto fra ferniseringen</a>
+                <a href="#trello">Trello</a>
+                <a href="#burn-down">Burn-down charts</a>
+            </div>
+
+        </div>
+
+        <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()">&#9776; </span>
+
+
+        <script>
+            function openNav() {
+
+                document.getElementById("myNav").style.width = "100%";
+
+            }
+
+
+            function closeNav() {
+
+                document.getElementById("myNav").style.width = "0%";
+
+            }
+        </script>
+        <img src="iconer/logo-privatsnak.png" width="150px" alt="privat snak logo">
     </header>
 
     <div id="medlemmer"></div>
@@ -41,6 +67,7 @@
 
     <div id="ide"></div>
     <h1>Idégenerering</h1>
+    <img src="dokumentation/brainstorm.png" width="90%" alt="brainstorm">
 
     <div id="historie"></div>
     <H1>Historie</H1>
@@ -52,18 +79,31 @@
 
     <div id="maalgruppe"></div>
     <h1>Målgruppe</h1>
+    <p>Målgruppen er piger og drenge mellem 13 og 15 år, det er en aldersgruppe som lige er kommet i puberteten <br>og som bliver kaldt teenagere, dette er et engelsk udtryk for unge mellem 13 og 19. Der er en spændende og interessant aldersgruppe. <br>Det er en periode i livet hvor de gennemgår nogle af deres største fysiske og psykiske forandringer. <br>De er i en alder hvor de har en følelse af, at de både er barn og voksen, <br>de er for små til det ene, og for stor til andet. Kort sagt har de et ben i hver lejr.<br> Livet som teenager byder på mange udfordringer og spørgsmål.
+    </p>
 
     <div id="moodboard"></div>
     <h1>Moodboard</h1>
+    <a href="dokumentation/Moodboard1.pdf">
+    <img src="iconer/icon-pdf-white.png" alt="sekvensdiagram" style="width:10vw;height:10vw;border:0;"></a>
 
     <div id="styletile"></div>
     <h1>Styletile</h1>
+    <img src="dokumentation/color.png" alt="color">
+    <h1>overskrift - anton normal - 2em </h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident minus reiciendis, placeat accusamus quisquam quo dolores quam ipsum quis officiis est, atque molestias fugiat soluta inventore odio enim minima quasi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ipsa amet incidunt, beatae, odit iste sit atque officiis animi in suscipit eos dignissimos quaerat vel quae, asperiores fuga illo quidem?<br><br> - Roboto regular - 1 em</p>
+    <h1>logo'er vi vil bruge</h1>
+    <img src="iconer/logo-privatsnak.png" width="180vw" alt="privat snak logo">
+    <img src="iconer/sexsamfundlogo.png" width="180vw" alt="sex og samfund logo">
 
     <div id="skitser"></div>
     <h1>Skitser</h1>
 
     <div id="layoutdiagram"></div>
-    <h1>layoutdiagram for scene</h1>
+    <h1>Layoutdiagram for scene</h1>
+    <a href="https://docs.google.com/presentation/d/18br4d7lOF0bwqAbAoOsFJWncRrK3u_2kfTtaFWVLrnY/edit?usp=sharing">
+    <img src="iconer/icon-pdf-white.png" alt="sekvensdiagram" style="width:10vw;height:10vw;border:0;"></a>
 
     <div id="sekvensdiagram"></div>
     <h1>Sekvensdiagram</h1>
@@ -81,9 +121,10 @@
 
     <div id="trello"></div>
     <h1>Trello link</h1>
+    <a href="https://trello.com/b/PdXwnFfb/sex-og-samfund-gruppe-6">Link til vores trello</a>
 
-    <div id="burn-down"></div>
-    <h1>Burn-down</h1>
+    <div id="Burn-down"></div>
+    <h1>Burn down charts</h1>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="javascript.js"></script>
