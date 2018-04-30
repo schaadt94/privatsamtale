@@ -338,11 +338,11 @@
 
 #boy_container {
     position: absolute;
-    z-index: 4;
-    height: 23vw;
-    width: 20vw;
-    top: 27vw;
-    left: 60vw;
+    z-index: 5;
+    height: 10vw;
+    width: 12vw;
+    top: 31vw;
+    left: 56vw;
 }
 
 .boy_position_in {}
@@ -350,10 +350,10 @@
 .boy_move_in {}
 
 #boy_sprite {
-    background-image: url(sprite/);
-    background-size: 800% 400%;
+    background-image: url(sprite/boy_sprite.png);
+    background-size: 1200% 500%;
     height: 23vw;
-    width: 20vw;
+    width: 18vw;
     transform: scale(0.7);
 }
 
@@ -371,8 +371,8 @@
     z-index: 4;
     height: 24vw;
     width: 24vw;
-    top: 29.5vw;
-    left: 38vw;
+    top: 29.6vw;
+    left: 36vw;
 
 }
 
