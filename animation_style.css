@@ -1,51 +1,361 @@
-#Scene {}
+#Scene {
+    overflow: hidden;
+    width: 90vw;
+    height: 50vw;
+    margin: auto;
+    position: relative;
+}
 
 /*Baggrund*/
 
-#girl_room {}
+/*#girl_room {
+    background-image: url(baggrund/room.png);
+    background-size: 100%;
+    width: 90vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
 
-#class_room {}
+}
 
+#girl_door {
+    background-image: url(baggrund/room_door.png);
+    background-size: 100%;
+    width: 90vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 3;
+    background-repeat: no-repeat;
+}*/
+
+#class_room {
+    background-image: url(baggrund/class_room.png);
+    background-size: 100%;
+    width: 90vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+
+
+#class_tables {
+    background-image: url(baggrund/class_tabels.png);
+    background-size: 100%;
+    width: 90vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+
+/*#reklame_show {
+    background-image: url(baggrund/rek.png);
+    background-size: 100%;
+    width: 90vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 9;
+}*/
 
 /*Figurer*/
 
-#girl_container {}
+#girl_container {
+    position: absolute;
+    z-index: 4;
+    height: 23vw;
+    width: 20vw;
+    top: 27vw;
+    left: 65vw;
+}
 
-.girl_go_room {}
+.girl_go_room {
+    animation-name: go_room;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 
-.girl_move_in {}
+}
 
-.girl_move_out {}
+@keyframes go_room {
+    from {
+        left: 80vw;
+    }
+    to {
+        left: 65vw;
+    }
+}
 
-.girl_position_in {}
+.girl_move_in {
+    animation-name: class;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 
-#girl_sprite {}
+}
 
-.girl_walk_room {}
+@keyframes go_class {
+    from {
+        left: 80vw;
+    }
+    to {
+        left: 65vw;
+    }
+}
 
-.girl_walk {}
 
-.girl_run {}
+.girl_move_out {
+    animation-name: class;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
 
-.girl_phone_smile {}
+}
 
-#phone_container {}
+@keyframes class {
+    from {
+        left: 65vw;
+    }
+    to {
+        left: 90vw;
+    }
+}
 
-.phone_came_up {}
+.girl_position_in {
+    left: 65vw;
+    top: 27vw;
 
-#phone_sprite {}
+}
 
-.crush_pic_phone {}
+#girl_sprite {
+    background-image: url(sprite/amalie_spritesheet.png);
+    background-size: 600% 400%;
+    height: 23vw;
+    width: 20vw;
+    transform: scale(0.7);
+}
 
-.phone_goodmorning {}
+.girl_walk_room {
+    animation-name: walk_room;
+    animation-duration: 1s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
 
-#boy_container {}
+@keyframes walk_room {
+    0% {
+        background-position: 0 -100%;
+
+    }
+
+    100% {
+        background-position: -600% -100%;
+    }
+
+}
+
+
+.girl_walk {
+    animation-name: walk;
+    animation-duration: 6s;
+    animation-timing-function: steps(6);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes walk {
+    0% {
+        background-position: 0 -100%;
+
+    }
+
+    100% {
+        background-position: -600% -100%;
+    }
+}
+
+.girl_run {
+    animation-name: run;
+    animation-duration: 1s;
+    animation-timing-function: steps(6);
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+
+}
+
+@keyframes run {
+    0% {
+        background-position: 0 -200%;
+
+    }
+
+    100% {
+        background-position: -600% -200%;
+    }
+}
+
+.girl_phone_smile {
+    animation-name: smile;
+    animation-duration: 6s;
+    animation-timing-function: steps(6);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes smile {
+    0% {
+        background-position: 0 -300%;
+
+    }
+
+    100% {
+        background-position: -300% -300%;
+    }
+}
+
+
+#phone_container {
+    position: absolute;
+    z-index: 4;
+    height: 70vw;
+    width: 40vw;
+    top: -9vw;
+    left: -2vw;
+
+}
+
+.phone_came_up {
+    animation-name: came_up;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+}
+
+@keyframes came_up {
+    from {
+        top: 40vw;
+    }
+
+    to {
+        top: -9vw;
+    }
+}
+
+
+#phone_sprite {
+    background-image: url(sprite/phone_sprite.png);
+    background-size: 600% 400%;
+    height: 70vw;
+    width: 40vw;
+    transform: scale(0.6);
+
+}
+
+.crush_pic_phone {
+    animation-name: crush_pic_phone;
+    animation-duration: 6s;
+    animation-timing-function: steps(6);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes crush_pic_phone {
+    0% {
+        background-position: 0 0;
+
+    }
+
+    100% {
+        background-position: -600% 0;
+    }
+
+}
+
+.crush {
+    animation-name: crush;
+    animation-duration: 3s;
+    animation-timing-function: steps(1);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes crush {
+    0% {
+        background-position: 0 -100%;
+
+    }
+
+    100% {
+        background-position: 0 -100%;
+    }
+
+}
+
+.phone_goodmorning {
+    animation-name: phone_goodmorning;
+    animation-duration: 3s;
+    animation-timing-function: steps(3);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes phone_goodmorning {
+    0% {
+        background-position: 0 -100%;
+
+    }
+
+    100% {
+        background-position: -300% -100%;
+    }
+
+}
+
+
+.phone_pic {
+    animation-name: phone_pic;
+    animation-duration: 6s;
+    animation-timing-function: steps(1);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes pic_phone {
+    0% {
+        background-position: 0 -300%;
+
+    }
+
+    100% {
+        background-position: 0 -300%;
+    }
+}
+
+
+
+#boy_container {
+    position: absolute;
+    z-index: 4;
+    height: 23vw;
+    width: 20vw;
+    top: 27vw;
+    left: 60vw;
+}
 
 .boy_position_in {}
 
 .boy_move_in {}
 
-#boy_sprite {}
+#boy_sprite {
+    background-image: url(sprite/);
+    background-size: 800% 400%;
+    height: 23vw;
+    width: 20vw;
+    transform: scale(0.7);
+}
 
 .boy_walk {}
 
@@ -55,20 +365,102 @@
 
 .boy_phone_smile {}
 
-#guys_container {}
 
-.guys_position_in {}
+#guys_container {
+    position: absolute;
+    z-index: 4;
+    height: 24vw;
+    width: 24vw;
+    top: 29.5vw;
+    left: 38vw;
 
-#guys_sprite {}
+}
 
-.guys_talk {}
+.guys_position_in {
+    left: 34vw;
+    top: 29.5vw;
+}
 
-.guys_laughs {}
+#guys_sprite {
+    background-image: url(sprite/Guys.png);
+    background-size: 600% 200%;
+    height: 24vw;
+    width: 24vw;
 
+}
+
+.guys_talk {
+
+    animation-name: talk;
+    animation-duration: 2s;
+    animation-timing-function: steps(6);
+    animation-fill-mode: both;
+    animation-iteration-count: 5;
+}
+
+@keyframes talk {
+    0% {
+        background-position: 0 0;
+
+    }
+
+    100% {
+        background-position: -600% 0;
+    }
+
+}
+
+.guys_laughs {
+    animation-name: laughs;
+    animation-duration: 2s;
+    animation-timing-function: steps(6);
+    animation-fill-mode: both;
+    animation-iteration-count: 5;
+}
+
+@keyframes laughs {
+    0% {
+        background-position: 0 -100%;
+
+    }
+
+    100% {
+        background-position: -600% -100%;
+    }
+}
 
 
 /*Knapper*/
 
-.vis_billedet {}
+.vis_billedet {
+    background-image: url(baggrund/vis-knap.png);
+    position: absolute;
+    background-size: 100%;
+    z-index: 11;
+    width: 7vw;
+    height: 2.78vw;
+    left: 10vw;
+    top: 30.4vw;
+    animation-name: knap_kf;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    background-position: center center;
 
-.skriv_besked {}
+}
+
+.skriv_besked {
+    background-image: url(baggrund/svar-knap.png);
+    position: absolute;
+    background-size: 100%;
+    z-index: 11;
+    width: 6.5vw;
+    height: 2.76vw;
+    left: 19vw;
+    top: 30.4vw;
+    animation-name: knap_kf;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    background-position: center center;
+}
