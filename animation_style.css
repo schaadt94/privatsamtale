@@ -8,7 +8,7 @@
 
 /*Baggrund*/
 
-/*#girl_room {
+#girl_room {
     background-image: url(baggrund/room.png);
     background-size: 100%;
     width: 90vw;
@@ -27,7 +27,7 @@
     position: absolute;
     z-index: 3;
     background-repeat: no-repeat;
-}*/
+}
 
 #class_room {
     background-image: url(baggrund/class_room.png);
@@ -50,14 +50,14 @@
     background-repeat: no-repeat;
 }
 
-/*#reklame_show {
+#reklame_show {
     background-image: url(baggrund/rek.png);
     background-size: 100%;
     width: 90vw;
     height: 50vw;
     position: absolute;
     z-index: 9;
-}*/
+}
 
 /*Figurer*/
 
@@ -345,9 +345,29 @@
     left: 56vw;
 }
 
-.boy_position_in {}
+.boy_position_in {
+    left: 56vw;
+    top: 31vw;
+}
 
-.boy_move_in {}
+.boy_move_in {
+    animation-name: boy_move;
+    animation-duration: 1s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes boy_move {
+    from {
+        left: 80vw;
+
+    }
+
+    to {
+        left: 56vw;
+    }
+}
 
 #boy_sprite {
     background-image: url(sprite/boy_sprite.png);
@@ -357,13 +377,84 @@
     transform: scale(0.7);
 }
 
-.boy_walk {}
+.boy_walk {
+    animation-name: boy_walk;
+    animation-duration: 1s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
 
-.boy_phone {}
+@keyframes boy_walk {
+    0% {
+        background-position: 0 0;
 
-.boy_show {}
+    }
 
-.boy_phone_smile {}
+    100% {
+        background-position: -400% 0;
+    }
+}
+
+
+.boy_phone {
+    animation-name: boy_phone;
+    animation-duration: 1s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes boy_phone {
+    0% {
+        background-position: -300% -100%;
+
+    }
+
+    100% {
+        background-position: -1100% -100%;
+    }
+}
+
+
+.boy_show {
+    animation-name: boy_show;
+    animation-duration: 1s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes boy_show {
+    0% {
+        background-position: 0 -300%;
+
+    }
+
+    100% {
+        background-position: -300% -300%;
+    }
+}
+
+
+.boy_phone_smile {
+    animation-name: boy_smile;
+    animation-duration: 1s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes boy_smile {
+    0% {
+        background-position: 0 -200%;
+
+    }
+
+    100% {
+        background-position: 0 -200%;
+    }
+}
 
 
 #guys_container {
@@ -441,11 +532,7 @@
     height: 2.78vw;
     left: 10vw;
     top: 30.4vw;
-    animation-name: knap_kf;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    background-position: center center;
+
 
 }
 
@@ -458,9 +545,5 @@
     height: 2.76vw;
     left: 19vw;
     top: 30.4vw;
-    animation-name: knap_kf;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    background-position: center center;
+
 }

@@ -76,7 +76,7 @@ a hover {
     color: white;
     display: block;
     transition: 0.3s;
-    font-family: 'bitstream_vera_serifbold';
+    font-family: 'Anton' sans-serif;
 }
 
 .overlay a:hover,
