@@ -61,42 +61,50 @@ girl_run
 /* Soveværelse scene */
 
 function siteShow() {
-    console.log ("Siden er loadet");
+    console.log("Siden er loadet");
+    $("#girl_room").addClass("girl_door");
+    $("#girl_container").addClass("girl_go_room");
+    $("#girl_sprite").addClass("girl_walk_room");
+    $("#phone_container").addClass("phone_came_up");
+    $("phone_sprite").addClass("cruch_pic_phone");
+    $("#music_room")[0].play();
+    $("#phone_vibration")[0].play();
+
 }
 
 /* Klasseværelse scene */
 
 function nextDay() {
-    console.log ("Klasseværelse");
+    console.log("Klasseværelse");
 }
 
 function phoneChoice() {
-    console.log ("Valget");
+    console.log("Valget");
 }
 
 function showPic() {
-    console.log ("Dreng viser billede")
+    console.log("Dreng viser billede")
 }
 
 function sadGirl() {
-    console.log ("Pige løber grædende");
+    console.log("Pige løber grædende");
 }
 
 function textHer() {
-    console.log ("Dreng skriver til pige");
+    console.log("Dreng skriver til pige");
 }
 
 function happyGirl() {
-    console.log ("Pige bliver glad");
+    console.log("Pige bliver glad");
 }
 
 /* Reklame scene */
 
 
 function badChoice() {
-    console.log ("Reklame og konsekvens");
+    console.log("Reklame og konsekvens");
 }
 
 function goodChoice() {
-    console.log ("Reklame og spørgsmål");
+    console.log("Reklame og spørgsmål");
 }
