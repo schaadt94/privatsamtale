@@ -66,9 +66,10 @@ function siteShow() {
     $("#girl_container").addClass("girl_go_room");
     $("#girl_sprite").addClass("girl_walk_room");
     $("#phone_container").addClass("phone_came_up");
-    $("phone_sprite").addClass("cruch_pic_phone");
+    $("#phone_sprite").addClass("crush_pic_phone");
     $("#music_room")[0].play();
     $("#phone_vibration")[0].play();
+    nextDay();
 
 }
 
@@ -76,6 +77,27 @@ function siteShow() {
 
 function nextDay() {
     console.log("Klasseværelse");
+    $("#girl_room").removeClass("girl_door");
+    $("#girl_container").removeClass("girl_go_room");
+    $("#girl_sprite").removeClass("girl_walk_room");
+    $("#phone_container").removeClass("phone_came_up");
+    $("phone_sprite").removeClass("cruch_pic_phone");
+    $("#music_room").off("ended");
+    $("#phone_vibration").off("ended");
+
+    $("#class_room").addClass("class_tables");
+    $("#boy_container").addClass("boy_move_in");
+    $("#boy_sprite").addClass("boy_walk");
+    $("#guys_container").addClass("guys_position_in");
+    $("guys_sprite").addClass("guys_talk");
+    $("#music_room")[0].play();
+    $("#phone_vibration")[0].play();
+
+
+
+
+
+
 }
 
 function phoneChoice() {

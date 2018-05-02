@@ -140,21 +140,21 @@
 }
 
 .girl_walk_room {
-    animation-name: walk_room;
-    animation-duration: 1s;
+    animation-name: walk_room_kf;
+    animation-duration: 2s;
     animation-timing-function: steps(5);
     animation-fill-mode: both;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
 }
 
-@keyframes walk_room {
+@keyframes walk_room_kf {
     0% {
         background-position: 0 -100%;
 
     }
 
     100% {
-        background-position: -600% -100%;
+        background-position: -500% -100%;
     }
 
 }
@@ -165,7 +165,7 @@
     animation-duration: 6s;
     animation-timing-function: steps(6);
     animation-fill-mode: both;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
 }
 
 @keyframes walk {
@@ -260,7 +260,7 @@
 .crush_pic_phone {
     animation-name: crush_pic_phone;
     animation-duration: 6s;
-    animation-timing-function: steps(6);
+    animation-timing-function: steps(5);
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
@@ -272,7 +272,7 @@
     }
 
     100% {
-        background-position: -600% 0;
+        background-position: -500% 0;
     }
 
 }
