@@ -528,6 +528,22 @@
 }
 
 
+#share_container {
+    background-image: url(baggrund/delt.png);
+    position: absolute;
+    background-size: 100%;
+    z-index: 11;
+    width: 80vw;
+}
+
+#text_container {
+    background-image: url(baggrund/tips.png);
+    position: absolute;
+    background-size: 100%;
+    z-index: 11;
+    width: 80vw;
+}
+
 /*Knapper*/
 
 .vis_billedet {
@@ -556,3 +572,5 @@
     display: none;
 
 }
+
+.privat_snak .first_time .hurt .flirt
