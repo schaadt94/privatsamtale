@@ -80,7 +80,7 @@ function nextDay() {
     console.log("Klasseværelse");
     $("#music_room").off("ended");
     $("#phone_vibration").off("ended");
-    $("#class_noise")[0].play();
+    $("#class_noise_done")[0].play();
     $("#phone_vibration")[0].play();
 
     $("#girl_room").hide();
@@ -233,7 +233,7 @@ function badChoice() {
     console.log("Reklame og konsekvens");
     $("#guys_laughs").off("ended");
     $("#guys_whistle").off("ended");
-    $("#class_noise").off("ended");
+    $("#class_noise_done").off("ended");
     $("#phone_vibration").off("ended");
 
 
