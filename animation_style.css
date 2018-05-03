@@ -9,7 +9,7 @@
 /*Baggrund*/
 
 #girl_room {
-    background-image: url(baggrund/room.png);
+    background-image: url(baggrund/Room-01.png);
     background-size: 100%;
     width: 90vw;
     height: 50vw;
@@ -19,46 +19,37 @@
 
 }
 
-#girl_door {
-    background-image: url(baggrund/room_door.png);
-    background-size: 100%;
-    width: 90vw;
-    height: 50vw;
-    position: absolute;
-    z-index: 3;
-    background-repeat: no-repeat;
-}
 
 #class_room {
-    background-image: url(baggrund/class_room.png);
+    background-image: url(baggrund/classroom_Tegnebr%C3%A6t%201.png);
     background-size: 100%;
     width: 90vw;
     height: 50vw;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     background-repeat: no-repeat;
     display: none;
 }
 
 
-#class_tables {
-    background-image: url(baggrund/class_tabels.png);
-    background-size: 100%;
-    width: 90vw;
-    height: 50vw;
-    position: absolute;
-    z-index: 2;
-    background-repeat: no-repeat;
-    display: none;
-}
 
 #reklame_show {
-    background-image: url(baggrund/rek.png);
+    background-image: url(baggrund/delt.png);
     background-size: 100%;
     width: 90vw;
     height: 50vw;
     position: absolute;
-    z-index: 9;
+    z-index: 20;
+    display: none;
+}
+
+#reklame_text {
+    background-image: url(baggrund/flirt.png);
+    background-size: 100%;
+    width: 90vw;
+    height: 50vw;
+    position: absolute;
+    z-index: 21;
     display: none;
 }
 
@@ -91,10 +82,10 @@
 }
 
 .girl_move_in {
-    animation-name: class;
+    animation-name: go_class;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
 
 }
 
@@ -110,9 +101,10 @@
 
 .girl_move_out {
     animation-name: class;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
+    animation-fill-mode: both;
 
 }
 
@@ -141,7 +133,7 @@
 
 .girl_walk_room {
     animation-name: walk_room_kf;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: steps(5);
     animation-fill-mode: both;
     animation-iteration-count: 2;
@@ -181,10 +173,10 @@
 
 .girl_run {
     animation-name: run;
-    animation-duration: 1s;
-    animation-timing-function: steps(6);
+    animation-duration: 3s;
+    animation-timing-function: steps(5);
     animation-fill-mode: both;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
 
 }
 
@@ -195,26 +187,26 @@
     }
 
     100% {
-        background-position: -600% -200%;
+        background-position: -500% -200%;
     }
 }
 
 .girl_phone_smile {
     animation-name: smile;
-    animation-duration: 6s;
-    animation-timing-function: steps(6);
+    animation-duration: 5s;
+    animation-timing-function: steps(3);
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
 
 @keyframes smile {
     0% {
-        background-position: 0 -300%;
+        background-position: 0 0%;
 
     }
 
     100% {
-        background-position: -300% -300%;
+        background-position: -300% 0%;
     }
 }
 
@@ -259,7 +251,7 @@
 
 .crush_pic_phone {
     animation-name: crush_pic_phone;
-    animation-duration: 6s;
+    animation-duration: 13s;
     animation-timing-function: steps(5);
     animation-fill-mode: both;
     animation-iteration-count: 1;
@@ -299,41 +291,41 @@
 
 .phone_goodmorning {
     animation-name: phone_goodmorning;
-    animation-duration: 3s;
-    animation-timing-function: steps(3);
+    animation-duration: 6s;
+    animation-timing-function: steps(2);
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
 
 @keyframes phone_goodmorning {
     0% {
-        background-position: 0 -100%;
+        background-position: 0 -200%;
 
     }
 
     100% {
-        background-position: -300% -100%;
+        background-position: -200% -200%;
     }
 
 }
 
 
 .phone_pic {
-    animation-name: phone_pic;
+    animation-name: pic_phone;
     animation-duration: 6s;
-    animation-timing-function: steps(1);
+    animation-timing-function: steps(0);
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
 
 @keyframes pic_phone {
     0% {
-        background-position: 0 -300%;
+        background-position: 0% -300%;
 
     }
 
     100% {
-        background-position: 0 -300%;
+        background-position: 0% -300%;
     }
 }
 
@@ -342,11 +334,11 @@
 #boy_container {
     position: absolute;
     z-index: 5;
-    height: 10vw;
-    width: 12vw;
-    top: 31vw;
+    height: 23vw;
+    width: 18vw;
+    top: 29vw;
     left: 56vw;
-    display: none
+    display: none;
 }
 
 .boy_position_in {
@@ -356,10 +348,9 @@
 
 .boy_move_in {
     animation-name: boy_move;
-    animation-duration: 1s;
-    animation-timing-function: steps(5);
-    animation-fill-mode: both;
+    animation-duration: 5s;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 
 @keyframes boy_move {
@@ -379,13 +370,13 @@
     height: 23vw;
     width: 18vw;
     transform: scale(0.7);
-    display: none
+
 }
 
 .boy_walk {
     animation-name: boy_walk;
-    animation-duration: 1s;
-    animation-timing-function: steps(5);
+    animation-duration: 3s;
+    animation-timing-function: steps(4);
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
@@ -425,7 +416,7 @@
 .boy_show {
     animation-name: boy_show;
     animation-duration: 1s;
-    animation-timing-function: steps(5);
+    animation-timing-function: steps(3);
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
@@ -483,7 +474,7 @@
     background-size: 600% 200%;
     height: 24vw;
     width: 24vw;
-    display: none;
+
 
 }
 
@@ -493,7 +484,7 @@
     animation-duration: 2s;
     animation-timing-function: steps(6);
     animation-fill-mode: both;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 }
 
 @keyframes talk {
@@ -513,7 +504,7 @@
     animation-duration: 2s;
     animation-timing-function: steps(6);
     animation-fill-mode: both;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 }
 
 @keyframes laughs {
@@ -546,6 +537,20 @@
 
 /*Knapper*/
 
+#knap_hojre {
+    width: 6.5vw;
+    height: 2.76vw;
+}
+
+#knap_venstre {
+    width: 7vw;
+    height: 2.78vw;
+}
+
+#knapper {
+    display: none;
+}
+
 .vis_billedet {
     background-image: url(baggrund/vis-knap.png);
     position: absolute;
@@ -553,12 +558,13 @@
     z-index: 11;
     width: 7vw;
     height: 2.78vw;
-    left: 10vw;
-    top: 30.4vw;
-    display: none;
-
+    left: 12vw;
+    top: 39.4vw;
 
 }
+
+
+
 
 .skriv_besked {
     background-image: url(baggrund/svar-knap.png);
@@ -567,10 +573,20 @@
     z-index: 11;
     width: 6.5vw;
     height: 2.76vw;
-    left: 19vw;
-    top: 30.4vw;
-    display: none;
+    left: 21vw;
+    top: 39.4vw;
+    /*display: none;*/
+}
 
+@keyframes knap {
+    from {
+        top: 52vw;
+
+    }
+
+    to {
+        top: 30.4vw;
+    }
 }
 
 .privat_snak .first_time .hurt .flirt
